@@ -1,0 +1,47 @@
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d %d",a,b);
+}
+
+#include <stdio.h>
+int main()
+{
+    float area,r;
+    scanf("%f",&r);
+    area=22/7*r*r;
+    printf("%.f",area);
+}
+
+#include <stdio.h>
+int main()
+{
+    int a,b,lcm;
+    scanf("%d %d",&a,&b);
+    lcm=(a>b)?a:b;
+    if(lcm%a==0 && lcm%b==0)
+      printf("%d",lcm);
+    else
+      printf("No commom factor");
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    int a,b,gcd,i;
+    scanf("%d %d",&a,&b);
+    for(i=1;i<=a && i<=b;i++)
+    {
+        if(a%i==0 && b%i==0)
+        gcd=i;
+    }
+    printf("%d",gcd);
+    return 0;
+}
+
